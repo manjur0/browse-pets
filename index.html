@@ -146,10 +146,10 @@
       <!-- Hero section -->
       <section class="container mx-auto px-4">
         <div
-          class="relative h-screen flex justify-start md:bg-[url(/assets/cat-big.png)] bg-no-repeat bg-contain"
+          class="relative h-screen flex justify-start md:bg-[url(/assets/cat-big.png)] bg-no-repeat md:bg-contain"
         >
-          <div class="space-y-6 md:absolute top-52">
-            <h2 class="adlam-font text-6xl">
+          <div class="space-y-6 relative md:absolute md:top-52 top-5">
+            <h2 class="adlam-font text-3xl font-normal md:text-6xl">
               Pamper Your Pet, <br />
               Because They Deserve <br />
               the Bes
@@ -159,11 +159,17 @@
               <br />
               your furry friends. Shop now and make tails wag with joy!
             </p>
+
             <button
-              class="sora-font btn text-base bg-[#FFDC26] hover:bg-[#FFDC26]"
+              class="z-10 absolute sora-font btn text-base bg-[#FFDC26] hover:bg-[#FFDC26]"
             >
               Find a pet
             </button>
+            <img
+              class="md:hidden absolute top-48"
+              src="./assets/cat-big.png"
+              alt=""
+            />
           </div>
         </div>
       </section>
